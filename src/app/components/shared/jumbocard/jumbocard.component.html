@@ -1,0 +1,27 @@
+<div class="jumbotron">
+
+    <div class="row justify-content-center">
+        <h1 class="display-4 mochi-title ">{{dataJumbo.title}}</h1>
+    </div>
+    <div class="row justify-content-center container">
+        <p class="lead text-center">{{dataJumbo.content}}</p>
+    </div>
+</div>
+
+<div class="row justify-content-center color-orange">
+    <div class="row container">
+        <div class="col-sm" *ngFor="let card of dataJumbo.cards">
+            <br>
+            <div class="card sin-borde color-orange" style="width: 100%; ">
+                <img src="assets/img/noimage.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row justify-content-center ">
+                        <h5 class="card-title mochi-title "> <b>{{card.titlecard}}</b> </h5>
+                        <p class="card-text text-justify" *ngFor="let p of card.contentscard">{{p}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

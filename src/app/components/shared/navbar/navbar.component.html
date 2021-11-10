@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/logos/logoMarcaPrincipal.png" width="200" height="100" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item " routerLinkActive="active" [hidden]="true">
+                <a class="nav-link" [routerLink]="['protegida']">protegia </a>
+            </li>
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['home']">Home </a>
+            </li>
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['mentesagiles']">Mentes Ágiles </a>
+            </li>
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['instalaciones']">Instalaciones </a>
+            </li>
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['pagaenlinea']">Paga en linea</a>
+            </li>
+            <li class="nav-item " routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['admisiones']">Contactanos</a>
+            </li>
+            <li class="nav-item " routerLinkActive="active" *ngIf="auth.isAuthenticated$ | async">
+                <a class="nav-link" [routerLink]="['administrador']">Administrador</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+          <button class="btn join-classes">
+            Join Classes
+            <sa-spinner-infinity [enabled]="false" [size]="30" [thickness]="156" [speed]="151" color="rgba(75, 178, 171, 1)" secondaryColor="rgba(24, 24, 24, 0.1)"></sa-spinner-infinity>
+          </button>
+        </span>
+    </div>
+</nav>

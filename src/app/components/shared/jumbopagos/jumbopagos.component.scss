@@ -1,0 +1,36 @@
+.colorgreenDark {
+    background-color: var(--color-green);
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: white;
+    font-size: 20px;
+}
+
+.card {
+    width: 35%;
+}
+
+.sin-borde {
+    border-style: none;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--color-two);
+    border-color: var(--color-one-two);
+}
+
+.colorgreenOrange {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.jumbotron {
+    border-radius: 0%;
+    margin-bottom: -1%;
+}

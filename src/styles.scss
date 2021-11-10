@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    // background-image: url('./assets/memphis-mini.png');
+    font-family: 'Raleway', sans-serif;
+}
+
+.mochi-title {
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+//colores
+:root {
+    --color-one: rgb(11, 181, 167);
+    --color-one-dark: rgb(11, 181, 167);
+    --color-two: rgb(200, 23, 46);
+    --color-red: rgb(183, 53, 78);
+    --color-orange: rgb(224, 118, 25);
+    --color-green: rgb(59, 197, 19);
+}
+
+//margin
+.mt-1 {
+    margin: 1px;
+}
+
+.mt-2 {
+    margin: 2px;
+}
+
+.mt-3 {
+    margin: 3px;
+}
+
+.mt-4 {
+    margin: 4px;
+}
+
+.mt-5 {
+    margin: 5px;
+}
+
+.mc {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+// amimaciones
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}

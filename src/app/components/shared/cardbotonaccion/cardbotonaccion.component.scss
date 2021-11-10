@@ -1,0 +1,12 @@
+a {
+    background-color: var(--color-two);
+    border-color: var(--color-two);
+    margin: 2px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--color-one-dark);
+    border-color: var(--color-one-dark);
+}

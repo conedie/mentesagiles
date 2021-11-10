@@ -1,0 +1,27 @@
+.colorgreenDark {
+    background-color: var(--color-one-dark);
+    color: white;
+}
+
+.sin-borde {
+    border-style: none;
+}
+
+.icon-card {
+    color: rgb(244, 166, 0);
+}
+
+.icon-card:hover {
+    color: teal;
+}
+
+.color-orange {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.jumbotron {
+    background-color: white;
+    color: var(--color-one-dark);
+    margin-bottom: -3%;
+}
