@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import JsonContactanos from '../../../assets/json/contactanos.json'
 
 @Component({
   selector: 'app-admisiones',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmisionesComponent implements OnInit {
 
+  dataPages:any = JsonContactanos;
   datajumbo1:any = {
     title: '¡Déjanos un mensaje!',
     content: [

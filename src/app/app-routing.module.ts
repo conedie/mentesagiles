@@ -8,7 +8,6 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { PagaenlineaComponent } from './components/pagaenlinea/pagaenlinea.component';
 import { AdministradorComponent } from './components/administrador/administrador.component';
 import { AuthGuard } from './services/auth.guard';
-import { ProtegidaComponent } from './components/protegida/protegida.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -17,7 +16,7 @@ const routes: Routes = [
   { path: 'mentesagiles', component: MentesagilesComponent},
   { path: 'pagaenlinea', component: PagaenlineaComponent},
   { path: 'administrador', component: AdministradorComponent, canActivate:[AuthGuard]},
-  { path: '**', pathMatch: 'full', redirectTo: 'protegida'}
+  { path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({

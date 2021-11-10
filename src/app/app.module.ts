@@ -71,8 +71,8 @@ import { IconosContactoComponent } from './components/shared/iconos-contacto/ico
     BrowserModule,
     AppRoutingModule,
     AuthModule.forRoot({
-      domain: 'dev-x322q-5c.us.auth0.com',
-      clientId: 'JN72szazVhqHxPKcuT79HUYEIEpgXJBA'
+      domain: '',
+      clientId: ''
     }),
     SpinnersAngularModule,
     YouTubePlayerModule

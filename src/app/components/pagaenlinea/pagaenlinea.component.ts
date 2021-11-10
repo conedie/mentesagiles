@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import JsonPagaEnLinea from '../../../assets/json/pagaenlinea.json'
 
 @Component({
   selector: 'app-pagaenlinea',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pagaenlinea.component.scss']
 })
 export class PagaenlineaComponent implements OnInit {
+
+  dataPages:any = JsonPagaEnLinea;
 
   dataPagos:any = {
     title:'Paga en línea',

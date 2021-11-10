@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CardImgLeftInter } from '../home/home.component';
+import JsonMentesAgiles  from '../../../assets/json/mentesagiles.json'
 
 @Component({
   selector: 'app-mentesagiles',
@@ -7,6 +8,8 @@ import { CardImgLeftInter } from '../home/home.component';
   styleUrls: ['./mentesagiles.component.scss']
 })
 export class MentesagilesComponent implements OnInit {
+
+  dataPage: any = JsonMentesAgiles;
 
   dataCardBienvenidos:CardImgLeftInter ={
     title: 'Somos Mentes Ágiles',

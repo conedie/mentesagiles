@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-iconos-contacto',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IconosContactoComponent implements OnInit {
 
-  constructor() { }
+  @Input() dataIcons:any;
+  constructor() {
+    console.log(this.dataIcons);
+  }
 
   ngOnInit(): void {
   }

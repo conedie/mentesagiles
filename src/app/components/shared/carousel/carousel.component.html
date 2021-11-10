@@ -1,15 +1,19 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" *ngFor="let datas of data">
-            <img [src]="datas" class="d-block w-100" alt="...">
+        <div class="carousel-item active" data-interval="10000">
+            <img src="assets/img/home/carousel/defauld.jpg" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item " data-interval="2000 " *ngFor="let img of images.listcarousel ">
+            <img [src]="img " class="d-block w-100 " alt="... ">
+        </div>
+
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <button class="carousel-control-prev " type="button " data-target="#carouselExampleInterval " data-slide="prev ">
+    <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+    <span class="sr-only ">Previous</span>
   </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <button class="carousel-control-next " type="button " data-target="#carouselExampleInterval " data-slide="next ">
+    <span class="carousel-control-next-icon " aria-hidden="true "></span>
+    <span class="sr-only ">Next</span>
   </button>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import JsonInstalaciones from '../../../assets/json/instalaciones.json';
 
 @Component({
   selector: 'app-instalaciones',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instalaciones.component.scss']
 })
 export class InstalacionesComponent implements OnInit {
+
+  dataPages: any = JsonInstalaciones;
 
   dataJumboOne:any = {
     title: 'Instalaciones',

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import homeJson from '../../../assets/json/home.json';
 
 export interface CardImgLeftInter{
   title:string;
@@ -21,27 +21,15 @@ export interface JumboColorOneInter{
 })
 export class HomeComponent implements OnInit {
 
-  data:any = [
-      '/assets/img/carousel1.jpg'
-  ]
+  dataPage: any = homeJson;
+  urlDanger:SafeResourceUrl = '';
 
-  dataCard:CardImgLeftInter ={
-      title: 'Bienvenidos a MAJI',
-      content: 'Somos un Jardín infantil diferente, con un proyecto único, enfocados en las experiencias y el juego como base de nuestro aprendizaje, ¡Queremos que sigan siendo niños, aprendan y sean grandes seres humanos! Conoce nuestro proyecto pedagógico de',
-      img:'assets/img/promo1.png',
-      textstrong:'PRESENCIAL Y VIRTUAL PARA EL 2022'
-    };
-
-    dataJumboColorOne:JumboColorOneInter ={
-      title: '¡CONTÁCTANOS!',
-      titleSub: '312 5737186 - 320 8390537'
-    };
-
-  constructor(private route:Router) {
-
+  constructor(private care:DomSanitizer) {
+    this.urlDanger = this.care.bypassSecurityTrustResourceUrl(this.dataPage.urlyoutube);
   }
 
   ngOnInit(): void {
   }
+
 
 }
