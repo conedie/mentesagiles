@@ -1,7 +1,7 @@
 {
     "jumboone": {
-        "title": "Somos Mentes Ágiles",
-        "content": "Un jardín fundamentado en los principios pedagógicos que le apuntan a satisfacer en los niños y niñas sus deseos de explorar, conocer e indagar por los sucesos del entorno, generando varias posibilidades de fascinación, creatividad, juego y comunicación. Promovemos la formación en valores, la expresión artística y el inglés intensivo, propiciando el desarrollo de sujetos sociales participativos, inteligentes, creativos, respetuosos y muy felices.de",
+        "title": "En Mentes Ágiles nos enfocamos en desarrollar las 3 inteligencias:",
+        "content": "",
         "textstrong": ""
     },
     "cards": [{
@@ -22,10 +22,7 @@
             "imgcard": "assets/img/mentesagiles/ipractica.jpg",
             "titlecard": "Inteligencia Práctica",
             "contentscard": [
-                "Resolución de problemas de la vida.",
-                "Arte y deporte.",
-                "Ligado al desarrollo motor y la práctica.",
-                "Habilidades de invención, descubrimiento e innovación."
+                "Resolución de problemas de la vida, el arte y el deporte.Ligado al desarrollo motor y la práctica. Habilidades de invención, descubrimiento e innovación."
             ]
         }
     ],
@@ -34,7 +31,7 @@
         "content": [
             "Lo nuestro es un proyecto pedagógico innovador, nos interesamos en desarrollar una manera diferente de pensar, organizar y trabajar en educación inicial, de esta manera contribuimos en la transformación de la educación en primera infancia en Colombia. Pensamos en el desarrollo integral de los profesionales del 2040.",
             "Nuestro equipo de trabajo y espacios pedagógicos promueven el desarrollo integral, partimos de los intereses de los niños y niñas, la motivación es la principal estrategia y la experiencia lleva a los niños y niñas a pensar científicamente, a desarrollar su pensamiento, su autonomía, su sensibilidad y su interés por el conocimiento.",
-            "Los niños y niñas son sujetos activos en sus procesos de desarrollo y en la construcción de su propio conocimiento, en el JARDIN INFANTIL MENTES ÁGILES nos encargamos de proporcionar ambientes enriquecidos, donde los docentes, las familias y la sociedad somos un puente conector entre ellos y el aprendizaje."
+            "Los niños y niñas son sujetos activos en sus procesos de desarrollo y en la construcción de su propio conocimiento, en el JARDÍN INFANTIL MENTES ÁGILES nos encargamos de proporcionar ambientes enriquecidos, donde los docentes, las familias y la sociedad somos un puente conector entre ellos y el aprendizaje."
         ]
     }
 }
