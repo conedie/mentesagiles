@@ -1,2 +1,0 @@
-# mentesagiles
-Proyecto Angular
