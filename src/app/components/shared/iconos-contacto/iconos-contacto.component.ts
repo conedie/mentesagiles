@@ -13,6 +13,7 @@ export class IconosContactoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.dataIcons);
   }
 
 }

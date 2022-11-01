@@ -53,3 +53,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
+::ng-deep .color-black {
+    color: black !important;
+}
