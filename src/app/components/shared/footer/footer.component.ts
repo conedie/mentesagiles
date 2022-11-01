@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit {
       service:'Atención: 8AM – 5PM'
     },
     {
-      title:'Sede Babys',
+      title:'Sede Kids',
       phone:'320 839 0537 – 312 573 7186',
       email:'mentesagiles@gmail.com',
       addrees:' Cra 70# 175 – 30 – Bogotá D.C.',

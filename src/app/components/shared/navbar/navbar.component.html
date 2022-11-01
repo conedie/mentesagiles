@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">
-        <img src="assets/img/logos/logoMarcaPrincipal.png" width="200" height="100" alt="">
+        <img [src]="dataPages.imglogo" width="160" height="110" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -29,12 +29,43 @@
             <li class="nav-item " routerLinkActive="active" *ngIf="auth.isAuthenticated$ | async">
                 <a class="nav-link" [routerLink]="['administrador']">Administrador</a>
             </li>
+            <li class="nav-item ">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">¡Trabaja con nosotros!</a>
+            </li>
         </ul>
-        <span class="navbar-text">
-          <button class="btn join-classes">
-            Join Classes
-            <sa-spinner-infinity [enabled]="false" [size]="30" [thickness]="156" [speed]="151" color="rgba(75, 178, 171, 1)" secondaryColor="rgba(24, 24, 24, 0.1)"></sa-spinner-infinity>
-          </button>
+        <span class="row justify-content-center">
+          <a [href]="dataPages.whatsappdefauld" target="_blank">
+            <button class="btn concatoWh">
+                <i class="bi bi-whatsapp"></i>
+                Contactanos
+                <!-- <sa-spinner-infinity [enabled]="false" [size]="30" [thickness]="156" [speed]="151" color="rgba(75, 178, 171, 1)" secondaryColor="rgba(24, 24, 24, 0.1)"></sa-spinner-infinity> -->
+              </button>
+            </a>
+            <button class="btn join-classes">
+              <a href="https://cloudcampuspro.com/home/index.html?p=3" target="_blank">Cloud Campus</a>
+            </button>
         </span>
     </div>
 </nav>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title color-text card-title" id="exampleModalLabel">Trabaja con nosotros</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <p>En Mentes Ágiles amamos lo que hacemos, si cuentas con conocimiento, compromiso y dedicación, envíanos tu hoja de vida a <span><a href="mailto:talentohumanomaji@gmail.com">talentohumanomaji@gmail.com</a></span> </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

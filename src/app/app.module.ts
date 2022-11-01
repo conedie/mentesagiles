@@ -35,6 +35,7 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { AutoplayyoutubeComponent } from './components/shared/autoplayyoutube/autoplayyoutube.component';
 import { IconosContactoComponent } from './components/shared/iconos-contacto/iconos-contacto.component';
+// import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { IconosContactoComponent } from './components/shared/iconos-contacto/ico
     AdministradorComponent,
     ProtegidaComponent,
     AutoplayyoutubeComponent,
-    IconosContactoComponent
+    IconosContactoComponent,
+    // HeaderComponent
   ],
   imports: [
     BrowserModule,

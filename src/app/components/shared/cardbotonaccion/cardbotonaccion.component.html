@@ -1,40 +1,118 @@
 <div class="container">
 
     <div class="row justify-content-center">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3" *ngFor="let card of dataCard.cards">
-            <h2 class="card-title text-center mochi-title "><strong>{{card.title}}</strong></h2>
-            <div class="card sin-borde">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img [src]='card.imgprimary' class="d-block w-100" alt="...">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+            <h2 class="card-title text-center mochi-title "><strong>{{dataCard.carduno.title}}</strong></h2>
+            <div class="row justify-content-center">
+                <div class="card sin-borde" style="width: 70%;">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img [src]='dataCard.carduno.imgprimary' class="d-block w-100" alt="..." width="50%">
+                            </div>
+                            <div class="carousel-item" *ngFor="let img of dataCard.carduno.images">
+                                <img [src]='img' class="d-block w-100" alt="..." width="50%">
+                            </div>
                         </div>
-                        <div class="carousel-item" *ngFor="let img of card.images">
-                            <img [src]='img' class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </button>
-                </div>
-
-                <div class="card-body">
-                    <p class="card-text text-justify" *ngFor="let p of card.content">{{p}}</p>
-                    <div class="row text-center card-text text-justify">
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <a [href]="card.link" target="_blank" class="btn btn-primary text-center">{{card.namebtn}}</a>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6">
-                            <a [href]="card.linktwo" target="_blank" class="btn btn-primary">{{card.namebtntwo}}</a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-justify" *ngFor="let p of dataCard.carduno.content">{{p}}</p>
+                        <div class="row text-center card-text text-justify">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <a [href]="dataCard.carduno.link" target="_blank" class="btn btn-primary text-center">{{dataCard.carduno.namebtn}}</a>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <a [href]="dataCard.carduno.linktwo" target="_blank" class="btn btn-primary">{{dataCard.carduno.namebtntwo}}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+            <h2 class="card-title text-center mochi-title "><strong>{{dataCard.carddos.title}}</strong></h2>
+            <div class="row justify-content-center">
+                <div class="card sin-borde" style="width: 70%;">
+                    <div id="dos" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img [src]='dataCard.carddos.imgprimary' class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" *ngFor="let img of dataCard.carddos.images">
+                                <img [src]='img' class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#dos" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                        <button class="carousel-control-next" type="button" data-target="#dos" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-justify" *ngFor="let p of dataCard.carddos.content">{{p}}</p>
+                        <div class="row text-center card-text text-justify">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <a [href]="dataCard.carddos.link" target="_blank" class="btn btn-primary text-center">{{dataCard.carddos.namebtn}}</a>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <a [href]="dataCard.carddos.linktwo" target="_blank" class="btn btn-primary">{{dataCard.carddos.namebtntwo}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
+            <h2 class="card-title text-center mochi-title "><strong>{{dataCard.cardtres.title}}</strong></h2>
+            <div class="row justify-content-center">
+                <div class="card sin-borde" style="width: 70%;">
+                    <div id="tres" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img [src]='dataCard.cardtres.imgprimary' class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" *ngFor="let img of dataCard.cardtres.images">
+                                <img [src]='img' class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#tres" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+                        <button class="carousel-control-next" type="button" data-target="#tres" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-justify" *ngFor="let p of dataCard.cardtres.content">{{p}}</p>
+                        <div class="row text-center card-text text-justify">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <a [href]="dataCard.cardtres.link" target="_blank" class="btn btn-primary text-center">{{dataCard.cardtres.namebtn}}</a>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <a [href]="dataCard.cardtres.linktwo" target="_blank" class="btn btn-primary">{{dataCard.cardtres.namebtntwo}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

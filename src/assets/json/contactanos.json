@@ -4,12 +4,15 @@
         "content": ["Nos comunicaremos contigo a la mayor brevedad."]
     },
     "contacto": [{
-            "url": "https://api.whatsapp.com/send/?phone=573208390537&Me%Quiero%mas%información",
-            "text": "Chat de whatsapp - 320 839 05 37"
+            "url": "https://api.whatsapp.com/send/?phone=573125737186&Me%Quiero%mas%información",
+            "text": "Chat de whatsapp - 312 573 71 86"
         },
         {
-            "url": "https://api.whatsapp.com/send/?phone=573125737186&Me%Quiero%mas%información",
-            "text": "Chat de whatsapp - 3125737186"
+            "url": "https://api.whatsapp.com/send/?phone=573208390537&Me%Quiero%mas%información",
+            "text": "Chat de whatsapp - 320 839 05 37"
         }
-    ]
+    ],
+    "whatsappdefauld": "https://api.whatsapp.com/send/?phone=573125737186&Me%Quiero%mas%información",
+    "urljoinclasses": "",
+    "imglogo": "assets/img/logos/logoMarcaPrincipal.png"
 }

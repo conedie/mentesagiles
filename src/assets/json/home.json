@@ -2,17 +2,17 @@
     "img": "assets/img/home/card/homeCard.jpg",
     "title": "Bienvenidos a MAJI",
     "content": "Somos un Jardín infantil diferente, con un proyecto único, enfocados en las experiencias y el juego como base de nuestro aprendizaje, ¡Queremos que sigan siendo niños, aprendan y sean grandes seres humanos! Conoce nuestro proyecto pedagógico   ",
-    "textstrong": " PRESENCIAL Y VIRTUAL PARA EL 2022",
+    "textstrong": " PRESENCIAL 2022",
     "urlyoutube": "https://www.youtube.com/embed/4dMgxvMMW0w?autoplay=1",
-    "defauldcarousel": "assets/img/home/carousel/defauld.jpg",
+    "defauldcarousel": "assets/img/home/carousel/defauld.png",
     "listcarousel": [
-        "assets/img/home/carousel/01.jpg",
-        "assets/img/home/carousel/02.jpg",
-        "assets/img/home/carousel/03.jpg",
-        "assets/img/home/carousel/04.jpg",
-        "assets/img/home/carousel/05.jpg",
-        "assets/img/home/carousel/06.jpg",
-        "assets/img/home/carousel/07.jpg",
-        "assets/img/home/carousel/08.jpg"
+        "assets/img/home/carousel/01.png",
+        "assets/img/home/carousel/02.png",
+        "assets/img/home/carousel/03.png",
+        "assets/img/home/carousel/04.png",
+        "assets/img/home/carousel/05.png",
+        "assets/img/home/carousel/06.png",
+        "assets/img/home/carousel/07.png",
+        "assets/img/home/carousel/08.png"
     ]
 }
